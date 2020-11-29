@@ -1,3 +1,6 @@
+The API was built using Node.js and Express.js to modify a MongoDB database.
+Additionally, the API also implement CORS to allow calls from localhost at the same origin.
+
 This API is deployed to Heroku and can access by url
 https://dh-react-card.herokuapp.com/all-cards
 
