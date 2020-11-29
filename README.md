@@ -1,5 +1,5 @@
 This API is deployed to Heroku and can access by url
-https://dh-react-card.herokuapp.com/
+https://dh-react-card.herokuapp.com/all-cards
 
 there are 4 API calls
 1. Get all cards (GET)
