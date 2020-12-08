@@ -8,6 +8,7 @@ const app = express();
 
 //middleware of express for HTML body
 app.use(express.urlencoded({ extended: true }));
+app.set("view engine", "ejs");
 // app.use(cors());
 
 // avoid CORS problem when accessing API from same origin source
@@ -46,6 +47,11 @@ app.options("/*", function (req, res, next) {
     "Content-Type, Authorization, Content-Length, X-Requested-With"
   );
   res.send(200);
+});
+
+//API: general intro page about the API
+app.get("/", (req, res) => {
+  res.render("index");
 });
 
 //API: get all cards
