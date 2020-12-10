@@ -64,3 +64,6 @@ app.post("/new", cardController.card_add_post);
 
 //API: delete a card
 app.delete("/delete/:id", cardController.card_delete);
+
+//API: update benefit of a card
+app.put("/edit/:id", cardController.card_update);
